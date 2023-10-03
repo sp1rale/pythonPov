@@ -1,14 +1,10 @@
-start = int(input("Введіть початок діапазону: "))
-end = int(input("Введіть кінець діапазону: "))
+num = int(input("Введіть число: "))
 
-total = 0
-count = 0
+factorial_sum = 0
 
-for num in range(start, end + 1):
-    total += num
-    count += 1
-
-average = total / count
-
-print(f"Сума чисел у діапазоні: {total}")
-print(f"Середньоарифметичне: {average}")
+if num > 0:
+    for i in range(1, num + 1):
+        factorial_sum += i
+    print(f"Факторіал числа {num} дорівнює {factorial_sum}")
+else:
+    print("Будь ласка, введіть додатне число.")
